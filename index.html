@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.2.2/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.2.2/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="main.js"></script> -->
+
+    <title>Web app</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <ul>
+                <li><span>OSM layer</span>
+                    <fieldset id="layer0">
+                        <label class="checkbox" for="visible0">
+                            visible <input id="visible0" class="visible" type="checkbox" />
+                        </label>
+                    </fieldset>
+                </li>
+                <li>
+                    <span>Layer group</span>
+                    <fieldset id="layer1">
+                        <label class="checkbox" for="visible1">
+                            visible <input id="visible1" class="visible" type="checkbox" />
+                        </label>
+
+                    </fieldset>
+                    <ul>
+                        <li>
+                            <span>Schools layer</span>
+                            <fieldset id="layer10">
+                                <label class="checkbox" for="visible10">
+                                    visible <input id="visible10" class="visible" type="checkbox" />
+                                </label>
+
+                            </fieldset>
+                        </li>
+                        <li>
+                            <span>Faculty layer</span>
+                            <fieldset id="layer11">
+                                <label class="checkbox" for="visible11">
+                                    visible <input id="visible11" class="visible" type="checkbox" />
+                                </label>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <span>Buildings layer</span>
+                            <fieldset id="layer12">
+                                <label class="checkbox" for="visible12">
+                                    visible <input id="visible12" class="visible" type="checkbox" />
+                                </label>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <span>Railway layer</span>
+                            <fieldset id="layer13">
+                                <label class="checkbox" for="visible13">
+                                    visible <input id="visible13" class="visible" type="checkbox" />
+                                </label>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <span>Rivers layer</span>
+                            <fieldset id="layer14">
+                                <label class="checkbox" for="visible14">
+                                    visible <input id="visible14" class="visible" type="checkbox" />
+                                </label>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <span>Roads layer</span>
+                            <fieldset id="layer15">
+                                <label class="checkbox" for="visible15">
+                                    visible <input id="visible15" class="visible" type="checkbox" />
+                                </label>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <span>Points layer</span>
+                            <fieldset id="layer16">
+                                <label class="checkbox" for="visible16">
+                                    visible <input id="visible16" class="visible" type="checkbox" />
+                                </label>
+                            </fieldset>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="legend">
+                <div>
+                    <img id="points" />
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div id="map"></div>
+            <div id="info">&nbsp;</div>
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
